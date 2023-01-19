@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "ESNext",
+    "lib": ["ES6", "ES2021"],
+    "module": "CommonJS",
+    "types": [
+      "node",
+      "jest",
+      "reflect-metadata"
+    ],
+    "declaration": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "removeComments": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "paths": {
+      "@configs/*": ["configs/*"],
+      "@errors/*": ["errors/*"],
+      "@helpers/*": ["helpers/*"],
+      "@languages/*": ["languages/*"],
+      "@middlewares/*": ["middlewares/*"],
+      "@models/*": ["models/*"],
+      "@modules/*": ["modules/*"],
+      "@declarations/*": ["types/*"],
+      "@infra/*": ["infra/*"]
+    },
+    "allowSyntheticDefaultImports": true, 
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
