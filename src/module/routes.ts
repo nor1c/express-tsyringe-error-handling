@@ -15,16 +15,7 @@ export default class ModuleRouter {
   }
 
   routes() {
-    this._router.get(
-      '/catch',
-      
-      this.controller.canCatch()
-
-      // masih bisa tercatch error handler
-      // () => {
-      //   throw new Error()
-      // }
-    )
+    this._router.get('/catch', this.controller.canCatch())
 
     return this._router
   }

@@ -14,10 +14,8 @@ class App {
   }
 
   async bootstrap() {
-    // module router
     this._app.use('/module', container.resolve<ModuleRouter>(ModuleRouter).routes())
 
-    // error handler
     this._app.use(
       (err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
         res.send('Something went wrong')
